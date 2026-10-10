@@ -1,0 +1,3 @@
+fields @timestamp, @message
+| filter @message like /Failed/ or @message like /Invalid user/
+| sort @timestamp desc
